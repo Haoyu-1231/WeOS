@@ -1,0 +1,11 @@
+$E"SJIS";							T120L4O4
+
+$K"‚«‚ç‚«‚ç‚Ð‚©‚é  ‚¨‹ó‚Ì¯‚æ";		CCGGAAG2 FFEEDDC2
+$K"‚Ü‚Î‚½‚«‚µ‚Ä‚Í  ‚Ý‚ñ‚È‚ðŒ©‚Ä‚é";	GGFFEED2 GGFFEED2
+$K"‚«‚ç‚«‚ç‚Ð‚©‚é  ‚¨‹ó‚Ì¯‚æ";		CCGGAAG2 FFEEDDC2
+$K"";								R1
+
+$K"‚«‚ç‚«‚ç‚Ð‚©‚é  ‚¨‹ó‚Ì¯‚æ";		CCGGAAG2 FFEEDDC2
+$K"‚Ý‚ñ‚È‚Ì‰Ì‚ª  “Í‚­‚Æ‚¢‚¢‚È";		GGFFEED2 GGFFEED2
+$K"‚«‚ç‚«‚ç‚Ð‚©‚é  ‚¨‹ó‚Ì¯‚æ";		CCGGAAG2 FFEEDDC2
+$K"";								R1 R1

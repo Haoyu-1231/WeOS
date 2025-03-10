@@ -30,7 +30,7 @@ putloop:
 		JMP 	putloop
 loadmsg:
 		DB 		0x0a
-		DB 		"WeOS 1.0 Beta 1 (Build 03) [Version 1.0.0.3]                                    "
+		DB 		"WeOS 1.0 Beta 1 (Build 04) [Version 1.0.0.4]                                    "
 		DB 		"Copyright (C) 2012-2025 RedSoil Studio.                                         "
 		DB 		0x0a, 0x0a
 		DB 		"THIS A BETA VERSION!                                                            "

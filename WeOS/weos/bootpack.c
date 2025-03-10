@@ -329,7 +329,7 @@ void HariMain(void)
 			
 			putfonts8_asc_sht(sht_back, 15, binfo->scrny -20, COL8_000000, COL8_C6C6C6, "WeOS", 4);
 			
-			putfonts8_asc_sht(sht_back, binfo->scrnx - 215, binfo->scrny -70, COL8_FFFFFF, 137, "WeOS 1.0 Beta 1 (Build 03)", 26);
+			putfonts8_asc_sht(sht_back, binfo->scrnx - 215, binfo->scrny -70, COL8_FFFFFF, 137, "WeOS 1.0 Beta 1 (Build 04)", 26);
 			putfonts8_asc_sht(sht_back, binfo->scrnx - 310, binfo->scrny -50, COL8_FFFFFF, 137, "版权所有 (C) 2012-2025 RedSoil 工作室.", 38);
 		}
 	}

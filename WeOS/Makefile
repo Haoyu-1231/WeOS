@@ -19,7 +19,8 @@ weos.img : weos/ipl09.bin weos/kernel.sys Makefile \
 		sosu/sosu.pgm sosu2/sosu2.pgm sosu3/sosu3.pgm \
 		type/type.pgm iroha/iroha.pgm chklang/chklang.pgm \
 		notrec/notrec.pgm bball/bball.pgm invader/invader.pgm \
-		calc/calc.pgm textedit/textedit.pgm mmlplay/mmlplay.pgm ptviewer/ptviewer.pgm sysinfo/sysinfo.pgm
+		calc/calc.pgm textedit/textedit.pgm mmlplay/mmlplay.pgm ptviewer/ptviewer.pgm \
+		sysinfo/sysinfo.pgm echo/echo.pgm
 	$(EDIMG)   imgin:../z_tools/fdimg0at.tek \
 		wbinimg src:weos/ipl09.bin len:512 from:0 to:0 \
 		copy from:weos/kernel.sys to:@: \
@@ -47,7 +48,7 @@ weos.img : weos/ipl09.bin weos/kernel.sys Makefile \
 		copy from:type/type.pgm to:@: \
 		copy from:iroha/iroha.pgm to:@: \
 		copy from:chklang/chklang.pgm to:@: \
-		copy from:test.txt to:@: \
+		copy from:help.txt to:@: \
 		copy from:notrec/notrec.pgm to:@: \
 		copy from:bball/bball.pgm to:@: \
 		copy from:invader/invader.pgm to:@: \
@@ -64,6 +65,7 @@ weos.img : weos/ipl09.bin weos/kernel.sys Makefile \
 		copy from:fonts/chinese.fnt to:@: \
 		copy from:sysinfo/sysinfo.pgm to:@: \
 		copy from:pictdata/weos.jpg to:@: \
+		copy from:echo/echo.pgm to:@: \
 		imgout:weos.img
 
 run :
@@ -108,6 +110,7 @@ full :
 	$(MAKE) -C mmlplay
 	$(MAKE) -C ptviewer
 	$(MAKE) -C sysinfo
+	$(MAKE) -C echo
 	$(MAKE) weos.img
 
 run_full :
@@ -162,6 +165,7 @@ clean_full :
 	$(MAKE) -C mmlplay		clean
 	$(MAKE) -C ptviewer		clean
 	$(MAKE) -C sysinfo		clean
+	$(MAKE) -C echo 		clean
 	
 src_only_full :
 	$(MAKE) -C weos			src_only
@@ -196,6 +200,7 @@ src_only_full :
 	$(MAKE) -C mmlplay		src_only
 	$(MAKE) -C ptviewer		src_only
 	$(MAKE) -C sysinfo		src_only
+	$(MAKE) -C echo 		src_only
 	-$(DEL) weos.img
 
 refresh :

@@ -1,0 +1,64 @@
+WeOS 1.0 简体中文帮助
+====================
+命令行命令帮助：
+- CLS            清除控制台。
+- DIR            显示一个目录的文件及子目录。
+- ECHO           显示消息。
+- EXIT           退出 WeOS 控制台。
+- HELP           显示 WeOS 命令帮助。
+- MEM            显示总内存和可用内存。
+- NCST           不带控制台窗口启动程序。
+- VER            显示 WeOS 的系统版本。
+- SHUTDOWN       正确关闭计算机。
+- START          带控制台窗口启动程序。
+- TYPE           显示文件的内容。
+
+系统快捷键帮助：
+- F11            切换置顶窗口。
+- Tab            切换活动窗口。
+- Shift+F1       结束任务。
+- Shift+F2       新开 WeOS 控制台。
+
+
+WeOS 1.0 English Help
+====================
+Command Line Command Help:
+- CLS            Clear Console.
+- DIR            Displays the files and subdirectories of a directory.
+- ECHO           Displays a message.
+- EXIT           Exits the WeOS console.
+- HELP           Displays the WeOS command help.
+- MEM            Shows total memory and available memory.
+- NCST           Does not come with a console window launcher.
+- VER            Displays the system version of WeOS.
+- SHUTDOWN       Shut down the computer properly.
+- START          With a console window launcher.
+- TYPE           Displays the contents of the file.
+
+System shortcut help:
+- F11            Toggles the sticky window.
+- Tab            To switch the active window.
+- Shift+F1       To end the task.
+- Shift+F2       Opens the new WeOS console.
+
+
+WeOS 1.0 日本語ヘルプ
+====================
+コマンドラインコマンドヘルプ:
+- CLS            コンソールをクリアします。
+- DIR            ディレクトリのファイルとサブディレクトリを表示します。
+- ECHO           メッセージを表示します。
+- EXIT           WeOS コンソールを終了します。
+- HELP           WeOS コマンドヘルプを表示します。
+- MEM            総メモリと使用可能メモリを表示します。
+- NCST           コンソールウィンドウランチャーは付属していません。
+- VER            WeOS のシステムバージョンを表示します。
+- SHUTDOWN       コンピュータを適切にシャットダウンします。
+- START          コンソールウィンドウランチャーを使用します。
+- TYPE           ファイルの内容を表示します。
+
+システムショートカットヘルプ:
+- F11            スティッキーウィンドウを切り替えます。
+- Tab            アクティブウィンドウを切り替えます。
+- Shift+F1       タスクを終了します。
+- Shift+F2       新しい WeOS コンソールを開きます。

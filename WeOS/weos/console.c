@@ -255,7 +255,7 @@ void cmd_help(struct CONSOLE *cons)
 void cmd_info(struct CONSOLE *cons)
 {
 	char s[86];
-	sprintf(s, "WeOS 1.0 Beta 1 (Build 05) [版本 1.0.0.5]\n版权所有 (C) 2012-2025 RedSoil 工作室.\n\n", 0);
+	sprintf(s, "WeOS 1.0 Beta 1 (Build 06) [版本 1.0.0.6]\n版权所有 (C) 2012-2025 RedSoil 工作室.\n\n", 0);
 	cons_putstr0(cons, s);
 	return;
 }
@@ -270,7 +270,7 @@ void cmd_mem(struct CONSOLE *cons, int memtotal)
 void cmd_ver(struct CONSOLE *cons)
 {
 	char s[47];
-	sprintf(s, "\nWeOS 1.0 Beta 1 (Build 05) [版本 1.0.0.5]\n\n", 0);
+	sprintf(s, "\nWeOS 1.0 Beta 1 (Build 06) [版本 1.0.0.6]\n\n", 0);
 	cons_putstr0(cons, s);
 	return;
 }

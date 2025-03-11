@@ -2,9 +2,9 @@
 
 void make_window8(unsigned char *buf, int xsize, int ysize, char *title, char act)
 {
-	boxfill8(buf, xsize, COL8_C6C6C6, 0,         0,         xsize - 1, 0        );
+	boxfill8(buf, xsize, COL8_000000, 0,         0,         xsize - 1, 0        );
 	boxfill8(buf, xsize, COL8_FFFFFF, 1,         1,         xsize - 2, 1        );
-	boxfill8(buf, xsize, COL8_C6C6C6, 0,         0,         0,         ysize - 1);
+	boxfill8(buf, xsize, COL8_000000, 0,         0,         0,         ysize - 1);
 	boxfill8(buf, xsize, COL8_FFFFFF, 1,         1,         1,         ysize - 2);
 	boxfill8(buf, xsize, COL8_848484, xsize - 2, 1,         xsize - 2, ysize - 2);
 	boxfill8(buf, xsize, COL8_000000, xsize - 1, 0,         xsize - 1, ysize - 1);
@@ -18,19 +18,19 @@ void make_window8(unsigned char *buf, int xsize, int ysize, char *title, char ac
 void make_wtitle8(unsigned char *buf, int xsize, char *title, char act)
 {
 	static char closebtn[14][16] = {
-		"OOOOOOOOOOOOOOOO",
-		"ORRRRRRRRRRRRRR@",
-		"ORRRRRRRRRRRRRR@",
-		"ORRROORRRROORRR@",
-		"ORRRROORROORRRR@",
-		"ORRRRROOOORRRRR@",
-		"ORRRRRROORRRRRR@",
-		"ORRRRROOOORRRRR@",
-		"ORRRROORROORRRR@",
-		"ORRROORRRROORRR@",
-		"ORRRRRRRRRRRRRR@",
-		"ORRRRRRRRRRRRRR@",
-		"ORRRRRRRRRRRRRR@",
+		"@@@@@@@@@@@@@@@@",
+		"@OOOOOOOOOOOOOO@",
+		"@ORRRRRRRRRRRRR@",
+		"@ORRRRRRRRRRRRR@",
+		"@ORROORRRROORRR@",
+		"@ORRROORROORRRR@",
+		"@ORRRROOOORRRRR@",
+		"@ORRRRROORRRRRR@",
+		"@ORRRROOOORRRRR@",
+		"@ORRROORROORRRR@",
+		"@ORROORRRROORRR@",
+		"@ORRRRRRRRRRRRR@",
+		"@ORRRRRRRRRRRRR@",
 		"@@@@@@@@@@@@@@@@"
 	};
 	int x, y;

@@ -37,7 +37,7 @@ file_error:
 	}
 
 	/* ƒEƒBƒ“ƒhƒE‚Ì€”õ */
-	win = api_openwin(winbuf, 256, 112, -1, "MMLPlay");
+	win = api_openwin(winbuf, 256, 112, -1, "MML·äÃù²¥·ÅÆ÷");
 	api_putstrwin(win, 128, 32, 0, i, p);
 	api_boxfilwin(win, 8, 60, 247,  76, 7);
 	api_boxfilwin(win, 6, 86, 249, 105, 7);

@@ -49,18 +49,18 @@ void HariMain(void)
 	char winbuf[336 * 261], invstr[32 * 6], s[12], keyflag[4], *p;
 	static char invstr0[32] = " abcd abcd abcd abcd abcd ";
 
-	win = api_openwin(winbuf, 336, 261, -1, "Invader");
+	win = api_openwin(winbuf, 336, 261, -1, "侵略者");
 	api_boxfilwin(win, 6, 27, 329, 254, 0);
 	timer = api_alloctimer();
 	api_inittimer(timer, 128);
 
 	high = 0;
-	putstr(win, winbuf, 22, 0, 7, "HIGH:00000000");
+	putstr(win, winbuf, 22, 0, 7, "最高:00000000");
 
 restart:
 	score = 0;
 	point = 1;
-	putstr(win, winbuf,  4, 0, 7, "SCORE:00000000");
+	putstr(win, winbuf,  4, 0, 7, "分数:00000000");
 	movewait0 = 20;
 	fx = 18;
 	putstr(win, winbuf, fx, 13, 6, "efg");
@@ -185,7 +185,7 @@ next_group:
 	}
 
 	/* GAME OVER */
-	putstr(win, winbuf, 15, 6, 1, "GAME OVER");
+	putstr(win, winbuf, 15, 6, 1, "游戏结束");
 	wait(0, timer, keyflag);
 	for (i = 1; i < 14; i++) {
 		putstr(win, winbuf, 0, i, 0, "                                        ");

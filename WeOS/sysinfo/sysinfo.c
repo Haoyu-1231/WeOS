@@ -6,7 +6,7 @@ void HariMain(void)
 	char buf[350 * 200];
 	win = api_openwin(buf, 350, 200, -1, "系统信息");
 	api_putstrwin(win, 20, 38, 0, 12, "RedSoil WeOS");
-	api_putstrwin(win, 20, 58, 0, 21, "1.0 Beta 1 (Build 06) [版本 1.0.0.6]");
+	api_putstrwin(win, 20, 58, 0, 21, "1.0 Beta 1 (Build 07) [版本 1.0.0.7]");
 	api_putstrwin(win, 20, 78, 1, 18, "此版本为测试版本！");
 	api_putstrwin(win, 21, 78, 1, 18, "此版本为测试版本！");
 	api_putstrwin(win, 20, 128, 0, 36, "版权所有 (C) 2012-2025 RedSoil 公司.");

@@ -15,6 +15,38 @@ void make_window8(unsigned char *buf, int xsize, int ysize, char *title, char ac
 	return;
 }
 
+void make_window_nobutton8(unsigned char *buf, int xsize, int ysize, char *title, char act)
+{
+	boxfill8(buf, xsize, COL8_000000, 0,         0,         xsize - 1, 0        );
+	boxfill8(buf, xsize, COL8_FFFFFF, 1,         1,         xsize - 2, 1        );
+	boxfill8(buf, xsize, COL8_000000, 0,         0,         0,         ysize - 1);
+	boxfill8(buf, xsize, COL8_FFFFFF, 1,         1,         1,         ysize - 2);
+	boxfill8(buf, xsize, COL8_848484, xsize - 2, 1,         xsize - 2, ysize - 2);
+	boxfill8(buf, xsize, COL8_000000, xsize - 1, 0,         xsize - 1, ysize - 1);
+	boxfill8(buf, xsize, COL8_C6C6C6, 2,         2,         xsize - 3, ysize - 3);
+	boxfill8(buf, xsize, COL8_848484, 1,         ysize - 2, xsize - 2, ysize - 2);
+	boxfill8(buf, xsize, COL8_000000, 0,         ysize - 1, xsize - 1, ysize - 1);
+	make_wtitle_nobutton8(buf, xsize, title, act);
+	return;
+}
+
+void make_wtitle_nobutton8(unsigned char *buf, int xsize, char *title, char act)
+{
+	int x, y;
+	char c, tc, tbc;
+	if (act != 0) {
+		tc = COL8_FFFFFF;
+		tbc = 208;
+	} else {
+		tc = COL8_C6C6C6;
+		tbc = COL8_848484;
+	}
+	boxfill8(buf, xsize, tbc, 3, 3, xsize - 4, 20);
+	putfonts8_asc(buf, xsize, 25, 5, COL8_000000, title);
+	putfonts8_asc(buf, xsize, 24, 4, tc, title);
+	return;
+}
+
 void make_wtitle8(unsigned char *buf, int xsize, char *title, char act)
 {
 	static char closebtn[14][16] = {

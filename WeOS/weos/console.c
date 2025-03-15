@@ -209,6 +209,7 @@ void cons_runcmd(char *cmdline, struct CONSOLE *cons, int *fat, int memtotal)
 	} else if (strncmp(cmdline, "langmode ", 9) == 0) {
 		cmd_langmode(cons, cmdline);
 	} else if (strcmp(cmdline, "shutdown") == 0) {
+		cmd_app(cons, fat, "sdwindow.pgm");
 		acpi_shutdown();
 	} else if (strcmp(cmdline, "help") == 0) {
 		cmd_help(cons);
@@ -255,7 +256,7 @@ void cmd_help(struct CONSOLE *cons)
 void cmd_info(struct CONSOLE *cons)
 {
 	char s[86];
-	sprintf(s, "WeOS 1.0 Beta 1 (Build 06) [版本 1.0.0.6]\n版权所有 (C) 2012-2025 RedSoil 工作室.\n\n", 0);
+	sprintf(s, "WeOS 1.0 Beta 1 (Build 07) [版本 1.0.0.7]\n版权所有 (C) 2012-2025 RedSoil 工作室.\n\n", 0);
 	cons_putstr0(cons, s);
 	return;
 }
@@ -270,7 +271,7 @@ void cmd_mem(struct CONSOLE *cons, int memtotal)
 void cmd_ver(struct CONSOLE *cons)
 {
 	char s[47];
-	sprintf(s, "\nWeOS 1.0 Beta 1 (Build 06) [版本 1.0.0.6]\n\n", 0);
+	sprintf(s, "\nWeOS 1.0 Beta 1 (Build 07) [版本 1.0.0.7]\n\n", 0);
 	cons_putstr0(cons, s);
 	return;
 }
@@ -656,6 +657,14 @@ int *hrb_api(int edi, int esi, int ebp, int esp, int ebx, int edx, int ecx, int 
 		reg[7] = i;
 	} else if (edx == 27) {
 		reg[7] = task->langmode;
+	} else if (edx == 28) {
+		sht = sheet_alloc(shtctl);
+		sht->task = task;
+		sht->flags |= 0x10;
+		sheet_setbuf(sht, (char *) ebx + ds_base, esi, edi, eax);
+		make_window_nobutton8((char *) ebx + ds_base, esi, edi, (char *) ecx + ds_base, 0);
+		sheet_slide(sht, ((shtctl->xsize - esi) / 2) & ~3, (shtctl->ysize - edi) / 2);
+		sheet_updown(sht, shtctl->top);
 	}
 	return 0;
 }

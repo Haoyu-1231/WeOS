@@ -25,3 +25,4 @@ int api_fsize(int fhandle, int mode);
 int api_fread(char *buf, int maxsize, int fhandle);
 int api_cmdline(char *buf, int maxsize);
 int api_getlang(void);
+int api_openwin_nobutton(char *buf, int xsiz, int ysiz, int col_inv, char *title);
